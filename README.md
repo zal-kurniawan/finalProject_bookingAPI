@@ -5,7 +5,7 @@ Make sure you have Java and Maven installed on your system.
 ### 1. Clone the Repository
 
 ```
-git clone https://github.com/zal-kurniawan/FinalProject_API.git
+git clone https://github.com/zal-kurniawan/finalProject_boookingAPI.git
 ```
 
 ### 2. Navigate to the Project Directory
