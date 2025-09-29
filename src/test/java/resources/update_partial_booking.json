@@ -1,0 +1,44 @@
+[
+    {
+        "usecase": "positive_updatePartialBookingFirstNameAndLastName",
+        "response": {
+            "firstname": "Adi",
+            "lastname": "Sunaryo",
+            "totalprice": 5000000,
+            "depositpaid": true,
+            "bookingdates": {
+                "checkin": "2025-09-26",
+                "checkout": "2025-09-30"
+            },
+            "additionalneeds": "Dinner"
+        }
+    },
+    {
+        "usecase": "positive_updatePartialBookingTotalPrice",
+        "response": {
+            "firstname": "Dhoe",
+            "lastname": "Jhon",
+            "totalprice": 15000000,
+            "depositpaid": true,
+            "bookingdates": {
+                "checkin": "2025-09-26",
+                "checkout": "2025-09-30"
+            },
+            "additionalneeds": "Dinner"
+        }
+    },
+    {
+        "usecase": "positive_updatePartialBookingDates",
+        "response": {
+            "firstname": "Dhoe",
+            "lastname": "Jhon",
+            "totalprice": 5000000,
+            "depositpaid": true,
+            "bookingdates": {
+                "checkin": "2026-02-26",
+                "checkout": "2026-03-10"
+            },
+            "additionalneeds": "Dinner"
+        }
+    }
+]

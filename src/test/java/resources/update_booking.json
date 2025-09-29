@@ -1,0 +1,80 @@
+[
+    {
+        "usecase": "positive_updateBookingWithValidRequest",
+        "payload": {
+            "firstname": "Rudi",
+            "lastname": "Rudian",
+            "totalprice": 500000,
+            "depositpaid": true,
+            "bookingdates": {
+                "checkin": "2026-01-01",
+                "checkout": "2027-01-01"
+            },
+            "additionalneeds": "Breakfast, Private Pool"
+        },
+        "response": {
+            "firstname": "Rudi",
+            "lastname": "Rudian",
+            "totalprice": 500000,
+            "depositpaid": true,
+            "bookingdates": {
+                "checkin": "2026-01-01",
+                "checkout": "2027-01-01"
+            },
+            "additionalneeds": "Breakfast, Private Pool"
+        }
+    },
+    {
+        "usecase": "positive_updateBookingWithReversedPayload",
+        "response": {
+            "firstname": "Jono",
+            "lastname": "Joni",
+            "totalprice": 500000,
+            "depositpaid": true,
+            "bookingdates": {
+                "checkin": "2018-01-01",
+                "checkout": "2019-01-01"
+            },
+            "additionalneeds": "Smooking Room"
+        }
+    },
+    {
+        "usecase": "integration_updateBooking",
+        "payload": {
+            "firstname": "Yono",
+            "lastname": "Darmaji",
+            "totalprice": 63000000,
+            "depositpaid": true,
+            "bookingdates": {
+                "checkin": "2025-11-07",
+                "checkout": "2025-12-26"
+            },
+            "additionalneeds": "Dinner, Private Pool"
+        },
+        "response": {
+            "firstname": "Yono",
+            "lastname": "Darmaji",
+            "totalprice": 63000000,
+            "depositpaid": true,
+            "bookingdates": {
+                "checkin": "2025-11-07",
+                "checkout": "2025-12-26"
+            },
+            "additionalneeds": "Dinner, Private Pool"
+        }
+    },
+    {
+        "usecase": "integration_updatePartialBooking",
+        "response": {
+            "firstname": "Wawan",
+            "lastname": "Hariyono",
+            "totalprice": 63000000,
+            "depositpaid": true,
+            "bookingdates": {
+                "checkin": "2025-11-07",
+                "checkout": "2025-12-26"
+            },
+            "additionalneeds": "Dinner, Private Pool, Smooking Room"
+        }
+    }
+]

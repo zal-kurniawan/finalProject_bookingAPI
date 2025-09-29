@@ -1,0 +1,23 @@
+[
+    {
+        "usecase": "positive_authWithValidCredentials",
+        "payload": {
+            "username": "admin",
+            "password": "password123"
+        }
+    },
+    {
+        "usecase": "negative_authWithInvalidCredentials",
+        "payload": {
+            "username": "admin1",
+            "password": "admin1"
+        }
+    },
+    {
+        "usecase": "negative_authWithEmptyCredentials",
+        "payload": {
+            "username": "",
+            "password": ""
+        }
+    }
+]

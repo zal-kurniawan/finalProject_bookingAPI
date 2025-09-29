@@ -1,0 +1,25 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!-- <suite name="AllTestsSuite" verbose="1"> -->
+    <suite name="Annotation Execution Suite" >
+        <test name="Final Project API">
+        <parameter name="program"  value="Final Project API"/>
+            <classes>
+                <class name="scenarios.positive.Authorization"/>
+                <class name="scenarios.positive.GetBookingIds"/>
+                <class name="scenarios.positive.GetBookingById"/>
+                <class name="scenarios.positive.CreateBooking"/>
+                <class name="scenarios.positive.UpdateBooking"/>
+                <class name="scenarios.positive.UpdatePartialBooking"/>
+                <class name="scenarios.positive.DeleteBooking"/>
+                <class name="scenarios.negative.Authorization"/>
+                <class name="scenarios.negative.GetBookingIds"/>
+                <class name="scenarios.negative.GetBookingById"/>
+                <class name="scenarios.negative.CreateBooking"/>
+                <class name="scenarios.negative.UpdateBooking"/>
+                <class name="scenarios.negative.UpdatePartialBooking"/>
+                <class name="scenarios.negative.DeleteBooking"/>
+                <class name ="scenarios.integration.BookingEndToEndTest"/>
+            </classes>
+        </test>
+    </suite>
+<!-- </suite> -->

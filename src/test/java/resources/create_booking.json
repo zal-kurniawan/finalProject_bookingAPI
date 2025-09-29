@@ -1,0 +1,170 @@
+[
+    {
+        "usecase": "positive_createBookingWithAllFields",
+        "payload": {
+            "firstname": "Jhon",
+            "lastname": "Dhoe",
+            "totalprice": 5000000,
+            "depositpaid": true,
+            "bookingdates": {
+                "checkin": "2025-09-26",
+                "checkout": "2025-09-30"
+            },
+            "additionalneeds": "Dinner"
+        },
+        "response": {
+            "bookingid": 1,
+            "booking": {
+                "firstname": "Jhon",
+                "lastname": "Dhoe",
+                "totalprice": 5000000,
+                "depositpaid": true,
+                "bookingdates": {
+                    "checkin": "2025-09-26",
+                    "checkout": "2025-09-30"
+                },
+                "additionalneeds": "Dinner"
+            }
+        }
+    },
+    {
+        "usecase": "positive_createBookingWithZeroPrice",
+        "payload": {
+            "firstname": "Jhon",
+            "lastname": "Dhoe",
+            "totalprice": 0,
+            "depositpaid": true,
+            "bookingdates": {
+                "checkin": "2025-09-26",
+                "checkout": "2025-09-30"
+            },
+            "additionalneeds": "Dinner"
+        },
+        "response": {
+            "bookingid": 1,
+            "booking": {
+                "firstname": "Jhon",
+                "lastname": "Dhoe",
+                "totalprice": 0,
+                "depositpaid": true,
+                "bookingdates": {
+                    "checkin": "2025-09-26",
+                    "checkout": "2025-09-30"
+                },
+                "additionalneeds": "Dinner"
+            }
+        }
+    },
+    {
+        "usecase": "positive_createBookingWithEmptyCheckInAndCheckOut",
+        "payload": {
+            "firstname": "Jhon",
+            "lastname": "Dhoe",
+            "totalprice": 5000000,
+            "depositpaid": false,
+            "bookingdates": {
+                "checkin": "2025-09-26",
+                "checkout": "2025-09-30"
+            },
+            "additionalneeds": "Dinner"
+        },
+        "response": {
+            "bookingid": 1,
+            "booking": {
+                "firstname": "Jhon",
+                "lastname": "Dhoe",
+                "totalprice": 5000000,
+                "depositpaid": false,
+                "bookingdates": {
+                    "checkin": "2025-09-26",
+                    "checkout": "2025-09-30"
+                },
+                "additionalneeds": "Dinner"
+            }
+        }
+    },
+    {
+        "usecase": "positive_createBookingForUpdateDeleteScenario",
+        "payload": {
+            "firstname": "Dhoe",
+            "lastname": "Jhon",
+            "totalprice": 5000000,
+            "depositpaid": true,
+            "bookingdates": {
+                "checkin": "2025-09-26",
+                "checkout": "2025-09-30"
+            },
+            "additionalneeds": "Dinner"
+        }
+    },
+    {
+        "usecase": "positive_createBookingForGetBookingById1",
+        "payload": {
+            "firstname": "Dhoe",
+            "lastname": "Jhon",
+            "totalprice": 5000000,
+            "depositpaid": true,
+            "bookingdates": {
+                "checkin": "2025-09-26",
+                "checkout": "2025-09-30"
+            },
+            "additionalneeds": "Dinner"
+        }
+    },
+    {
+        "usecase": "positive_createBookingForGetBookingById2",
+        "payload": {
+            "firstname": "Dhoe",
+            "lastname": "Jhon",
+            "totalprice": 5000000,
+            "depositpaid": false,
+            "bookingdates": {
+                "checkin": "2025-09-26",
+                "checkout": "2025-09-30"
+            },
+            "additionalneeds": "Dinner"
+        }
+    },
+    {
+        "usecase": "positive_createBookingForGetBookingById3",
+        "payload": {
+            "firstname": "Dhoe",
+            "lastname": "Jhon",
+            "totalprice": 5000000,
+            "depositpaid": true,
+            "bookingdates": {
+                "checkin": "2025-09-26",
+                "checkout": "2025-09-30"
+            },
+            "additionalneeds": ""
+        }
+    },
+    {
+        "usecase": "integration_createBooking",
+        "payload": {
+            "firstname": "Gogon",
+            "lastname": "Sudarsono",
+            "totalprice": 2400000,
+            "depositpaid": true,
+            "bookingdates": {
+                "checkin": "2025-07-13",
+                "checkout": "2025-10-24"
+            },
+            "additionalneeds": "Breakfast"
+        },
+        "response": {
+            "bookingid": 1,
+            "booking": {
+                "firstname": "Gogon",
+                "lastname": "Sudarsono",
+                "totalprice": 2400000,
+                "depositpaid": true,
+                "bookingdates": {
+                    "checkin": "2025-07-13",
+                    "checkout": "2025-10-24"
+                },
+                "additionalneeds": "Breakfast"
+            }
+        }
+    }
+]
