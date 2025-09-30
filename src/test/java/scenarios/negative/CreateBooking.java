@@ -2,7 +2,6 @@ package scenarios.negative;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
 import com.example.base.BaseTest;
 import apiEngine.BookingAPI;
 import io.restassured.response.Response;

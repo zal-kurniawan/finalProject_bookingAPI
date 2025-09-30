@@ -42,7 +42,7 @@
         }
     },
     {
-        "usecase": "integration_getBookingAfterCreate",
+        "usecase": "integration_getBookingAfterCreateFullUpdate",
         "response": {
             "firstname": "Gogon",
             "lastname": "Sudarsono",
@@ -56,7 +56,7 @@
         }
     },
     {
-        "usecase": "integration_getBookingAfterUpdate",
+        "usecase": "integration_getBookingAfterFullUpdate",
         "response": {
             "firstname": "Yono",
             "lastname": "Darmaji",
@@ -70,17 +70,45 @@
         }
     },
     {
+        "usecase": "integration_getBookingAfterCreatePartialUpdate",
+        "response": {
+            "firstname": "Edo",
+            "lastname": "Ode",
+            "totalprice": 5230400,
+            "depositpaid": false,
+            "bookingdates": {
+                "checkin": "2025-07-13",
+                "checkout": "2025-10-24"
+            },
+            "additionalneeds": "Dinner"
+        }
+    },
+    {
         "usecase": "integration_getBookingAfterPartialUpdate",
         "response": {
             "firstname": "Wawan",
             "lastname": "Hariyono",
-            "totalprice": 63000000,
-            "depositpaid": true,
+            "totalprice": 5230400,
+            "depositpaid": false,
             "bookingdates": {
-                "checkin": "2025-11-07",
-                "checkout": "2025-12-26"
+                "checkin": "2025-07-13",
+                "checkout": "2025-10-24"
             },
             "additionalneeds": "Dinner, Private Pool, Smooking Room"
+        }
+    },
+    {
+        "usecase": "integration_getBookingDetail",
+        "response": {
+            "firstname": "Nono",
+            "lastname": "Yeye",
+            "totalprice": 664901932,
+            "depositpaid": true,
+            "bookingdates": {
+                "checkin": "2025-07-13",
+                "checkout": "2025-10-24"
+            },
+            "additionalneeds": "Lunch"
         }
     }
 ]

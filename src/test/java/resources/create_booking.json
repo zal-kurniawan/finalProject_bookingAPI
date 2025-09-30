@@ -140,7 +140,7 @@
         }
     },
     {
-        "usecase": "integration_createBooking",
+        "usecase": "integration_createBookingFullUpdate",
         "payload": {
             "firstname": "Gogon",
             "lastname": "Sudarsono",
@@ -164,6 +164,62 @@
                     "checkout": "2025-10-24"
                 },
                 "additionalneeds": "Breakfast"
+            }
+        }
+    },
+    {
+        "usecase": "integration_createBookingPartialUpdate",
+        "payload": {
+            "firstname": "Edo",
+            "lastname": "Ode",
+            "totalprice": 5230400,
+            "depositpaid": false,
+            "bookingdates": {
+                "checkin": "2025-07-13",
+                "checkout": "2025-10-24"
+            },
+            "additionalneeds": "Dinner"
+        },
+        "response": {
+            "bookingid": 1,
+            "booking": {
+                "firstname": "Edo",
+                "lastname": "Ode",
+                "totalprice": 5230400,
+                "depositpaid": false,
+                "bookingdates": {
+                    "checkin": "2025-07-13",
+                    "checkout": "2025-10-24"
+                },
+                "additionalneeds": "Dinner"
+            }
+        }
+    },
+    {
+        "usecase": "integration_createBookingAndSearch",
+        "payload": {
+            "firstname": "Nono",
+            "lastname": "Yeye",
+            "totalprice": 664901932,
+            "depositpaid": true,
+            "bookingdates": {
+                "checkin": "2025-07-13",
+                "checkout": "2025-10-24"
+            },
+            "additionalneeds": "Lunch"
+        },
+        "response": {
+            "bookingid": 1,
+            "booking": {
+                "firstname": "Nono",
+                "lastname": "Yeye",
+                "totalprice": 664901932,
+                "depositpaid": true,
+                "bookingdates": {
+                    "checkin": "2025-07-13",
+                    "checkout": "2025-10-24"
+                },
+                "additionalneeds": "Lunch"
             }
         }
     }

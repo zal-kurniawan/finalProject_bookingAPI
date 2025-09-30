@@ -18,7 +18,9 @@
                 <class name="scenarios.negative.UpdateBooking"/>
                 <class name="scenarios.negative.UpdatePartialBooking"/>
                 <class name="scenarios.negative.DeleteBooking"/>
-                <class name ="scenarios.integration.BookingEndToEndTest"/>
+                <class name ="scenarios.integration.BookingAndSearch"/>
+                <class name ="scenarios.integration.BookingFullUpdate"/>
+                <class name ="scenarios.integration.BookingPartialUpdate"/>
             </classes>
         </test>
     </suite>

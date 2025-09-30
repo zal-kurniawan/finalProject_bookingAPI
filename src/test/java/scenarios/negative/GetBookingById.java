@@ -4,7 +4,6 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import static io.restassured.RestAssured.given;
 import com.example.base.BaseTest;
-
 import apiEngine.BookingAPI;
 import io.restassured.response.Response;
 

@@ -1,7 +1,6 @@
 package scenarios.negative;
 
 import static io.restassured.RestAssured.given;
-
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import com.example.base.BaseTest;

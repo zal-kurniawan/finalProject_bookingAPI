@@ -4,7 +4,6 @@ import static io.restassured.RestAssured.given;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import com.example.base.BaseTest;
-
 import io.restassured.response.Response;
 
 public class UpdatePartialBooking extends BaseTest {
