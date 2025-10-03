@@ -11,7 +11,7 @@ git clone https://github.com/zal-kurniawan/finalProject_boookingAPI.git
 ### 2. Navigate to the Project Directory
 
 ```
-cd finalproject_api
+cd finalProject_boookingAPI
 ```
 
 ### 3. Run Tests via Maven
